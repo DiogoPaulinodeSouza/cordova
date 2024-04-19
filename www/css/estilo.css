@@ -1,0 +1,17 @@
+body{
+    background-color: yellow;
+    padding: 10px;
+    color: blue;
+    margin: 5px;
+    border: 5px double;
+    text-align: center;
+
+}
+
+h1{
+    font-size: 5px;
+    font-weight: bold;
+    font-family: Arial;
+
+
+}
