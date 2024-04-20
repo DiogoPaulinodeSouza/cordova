@@ -1,12 +1,55 @@
 body{
     background-color: yellow;
-    padding: 10px;
     color: blue;
-    margin: 5px;
-    border: 5px double;
-    text-align: center;
+    padding: 0%;
+    margin: 0%;
 
 }
+
+#layout{
+    display: grid;
+    grid-template-areas: 
+    'top'
+    'meio'
+    'footer'    
+    ;
+    grid-template-rows: 150px 150px 150px;
+}
+
+#top{
+    grid-area: top;
+    background-color: red;
+    height: 150px;
+}
+
+#meio{
+    grid-area: meio;
+    background-color: green;
+    height: auto;
+    display: grid;
+    
+    
+}
+
+#footer{
+    grid-area: footer;
+    background-color: blue;
+    height: 150px;
+}
+
+#meio div{
+    text-align: center;
+    margin:10px auto;
+    width: 150px;
+    background-color: black;
+
+
+
+}
+
+
+
+
 
 h1{
     font-size: 5px;
