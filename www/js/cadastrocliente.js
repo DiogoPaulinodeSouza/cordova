@@ -1,27 +1,28 @@
 function enviar(){
-
-
     const dbParam = JSON.stringify(
         {
-            "Nome": document.querySelector("#nome").value,
-            "Documento": document.querySelector("#documento").value,
-            "Celular": document.querySelector("#celular").value,
-            "Numero": document.querySelector("#numero").value,
-            "CEP": document.querySelector("#CEP").value,
-            "Endereco": document.querySelector("#Endereco").value,
-            "Bairro": document.querySelector("#Bairro").value,
-            "Cidade": document.querySelector("#Cidade").value,
-            "Estado": document.querySelector("#Estado").value,
+            "nome": document.querySelector("#nome").value,
+            "documento": document.querySelector("#documento").value,
+            "celular": document.querySelector("#celular").value,
+            "numero": document.querySelector("#numero").value,
+            "cidade": document.querySelector("#cidade").value,
+            "estado": document.querySelector("#estado").value,
+            "bairro": document.querySelector("#bairro").value,
+            "endereco": document.querySelector("#logradouro").value,
+            "cep": document.querySelector("#cep").value
         }
     );
     const xmlhttp = new XMLHttpRequest();
     xmlhttp.onload = function() {
-        const myObj = JSON.parse(this.responseText);
-        console.log(myObj);
-        document.getElementById("demo").innerHTML = myObj;
+        if(xmlhttp.response== 1)
+        {
+            alert("Cadastrado com sucesso")
+        }else{
+            alert("Falha ao cadastrar. Consulte o console")
+        }
+        console.log(xmlhttp.response)
     }
-    xmlhttp.open("POST", "http://localhost:8081/api/back.php");
+    xmlhttp.open("POST", "https://etec.fernandograciano.com.br/cadastrocliente.php");
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send("dados="+dbParam );
-
 }

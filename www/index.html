@@ -1,173 +1,143 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
-       
-        <link href="css/css-bootstrap/bootstrap.css" rel="stylesheet"/>
-        <link href="css/estilo.css" rel="stylesheet"/>
-        <title>Venha ser um Marksfelizinhuu</title>
-    </head>
-    <body>
-        <div class="row">
-            <div clas=" col-sm-12">
-                <div class="input-group mb-3">
-                    <input id="cep" class="form-control" placeholder="Cep" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <div class="input-group-append">
-                      <button id="botao"class="btn btn-outline-secondary" type="button" id="button-addon2">Botão</button>
-                    </div>
-                  </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link href="css/estilo.css" rel="stylesheet" />
+    <title>App Fernando</title>
+</head>
+
+<body><div data-role="page" id="cadastrar">
+    <div class="col-sm-12 col-xs-12">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="email" placeholder="email" aria-label="email"
+                    aria-describedby="button">
+                    <input type="text" class="form-control" id="senha" placeholder="senha" aria-label="senha"
+                    aria-describedby="button">
+
+                <button class="btn btn-primary" id="botao"><a href="#cadastrocliente">cadastrar</a></button>
             </div>
         </div>
- 
-            <br></br>
- 
-            <div class="row">
-            <div class=" col-xs-12">
-               <label>Endereço</label>
-                <input type="text" id="endereço"/>
-             
-                </div>
+
+        
+
+
+</div>
+    <div data-role="page" id="cadastrocliente"><div class="row">
+        <div class="col-sm-12 col-xs-12">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="cep" placeholder="Cep" aria-label="Cep"
+                    aria-describedby="button">
+                <button class="btn btn-primary" id="botao">Pesquisar CEP</button>
             </div>
- 
-            <br></br>
- 
-            <div class="row">
-                <div class=" col-xs-12">
-                   <label>Complemento</label>
-                    <input type="text" id="complemento"/>
-                 
-   
-                    </div>
-                </div>
-   
-            <br></br>
- 
-                <div class="row">
-                    <div class=" col-xs-12">
-                       <label>Bairro</label>
-                        <input type="text" id="bairro"/>
-                     
-       
-                        </div>
-                    </div>
-       
-            <br></br>
- 
-                    <div class="row">
-                        <div class=" col-xs-12">
-                           <label>Localidade</label>
-                            <input type="text" id="localidade"/>
-                         
-           
-                            </div>
-                        </div>
-           
-             <br></br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <label>Nome</label>
+            <input class="form-control" type="text" id="nome" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <label>Documento</label>
+            <input class="form-control" type="text" id="documento" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <label>Celular</label>
+            <input class="form-control" type="text" id="celular" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <label>Endereço</label>
+            <input class="form-control" type="text" id="logradouro" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <label>Numero</label>
+            <input class="form-control" type="text" id="numero" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <label>Bairro</label>
+            <input class="form-control" type="text" id="bairro" />
+        </div>
+    </div>
 
-             <div class="row">
-                <div class=" col-xs-12">
-                   <label>Nome</label>
-                    <input type="text" id="nome"/>
-                 
-   
-                    </div>
-                </div>
-                <br></br>
+    <div class="row">
+        <div class="col-xs-12">
+            <label>Cidade</label>
+            <input class="form-control" type="text" id="cidade" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <label>Estado</label>
+            <input class="form-control" type="text" id="estado" />
+        </div>
+    </div>
 
-                <div class="row">
-                    <div class=" col-xs-12">
-                       <label>Documento</label>
-                        <input type="text" id="documento"/>
-                     
-       
-                        </div>
-                    </div>
-                    <br></br>
-
-                    <div class="row">
-                        <div class=" col-xs-12">
-                           <label>Celular</label>
-                            <input type="text" id="celular"/>
-                         
-           
-                            </div>
-                        </div>
-                        <br></br>
-
-                        <div class="row">
-                            <div class=" col-xs-12">
-                               <label>Numero</label>
-                                <input type="text" id="numero"/>
-                        
-               
-                                </div>
-                            </div>
-                            <br></br>
-
-                            <div class="row">
-                                <div class=" col-xs-12">
-                                   <label>CEP</label>
-                                    <input type="text" id="CEP"/>
-                                 
-                   
-                                    </div>
-                                </div>
-                                <br></br>
-
-                                    </div>
-
-                                    <div class="row">
-                                        <div class=" col-xs-12">
-                                           <label>Cidade</label>
-                                            <input type="text" id="estado"/>
-                                         
-                           
-                                            </div>
-                                        </div>
-                                        <br></br>
-
-                                        <div class="row">
-                                            <div class=" col-xs-12">
-                                               <label>Estado</label>
-                                                <input type="text" id="estado"/>
-                                             
-                               
-                                                </div>
-                                            </div>
-                                            <br></br>
-
-                                            <div class="row">
-                                                <div class=" col-xs-12">
-                                                   <button class="btn btn-success" onclick="enviar()">
-                                                   Salvar Dados
-                                                    </button>
-                                   
-                                                    </div>
-                                                </div>
-                                                <br></br>
-
-
- 
- 
-   
-               
-         
-            <button class="btn btn-danger" onclick="salvarLocal('nome','joaquim')">cadastrar no localStoreage</button>
-<br>
-            <button class="btn btn-warning" onclick="lerLocal()">
-            ler Storeage
+    <div class="row">
+        <div class="col-xs-12">
+            <button class="btn btn-success" onclick="enviar()">
+                Salvar dados
             </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <button class="btn btn-warning">
+                <a href="#lerclientes">Ler Clientes</a>
+            </button>
+        </div>
+    </div>
+</div>
 
-            <script src="js/js-bootstrap/bootstrap.bundle.js"></script>
-            <script src="js/index.js"></script>
-            <script src="js/cadastrocliente.js"></script>
-            <Script src="js/armarenar.js"></Script>
+<div data-role="page" id="lerclientes"><div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-warning" onclick="lerclientes()">
+            Ler Clientes
+        </button>
+    </div>
+</div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Celular</th>
+                <th>Documento</th>
+                <th>Endereço</th>
+                
+            </tr>
+        </thead>
+        <tbody id="corpotabela"></tbody>
+    </table>
+    <div class="row">
+        <div class="col-xs-12">
+            <button class="btn btn-warning">
+                <a href="#cadastrocliente">voltar</a>
+            </button>
+        </div>
+    </div></div>
+    
 
- 
-   
-    </body>
+    <script src="js/index.js"></script>
+    <script src="js/cadastrocliente.js"></script>
+    <script src="js/lerclientes.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</body>
+
 </html>
